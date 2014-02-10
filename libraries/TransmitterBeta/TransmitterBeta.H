@@ -1,6 +1,6 @@
 /*
  TransmitterBeta library header file
- This library contains different transmit commands and is created to make the arduino file more
+ This library contains different transmitter commands and is created to make the arduino file more
  comapct and better readable. More commands will be added if I need them.
  Build date 03-02-2014
  edited: 08-02-2014  --- optimizations ---
