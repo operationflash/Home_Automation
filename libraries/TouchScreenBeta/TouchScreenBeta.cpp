@@ -4,6 +4,7 @@
  edited: 04-02-2014
  edited: 07-02-2014  ---bugfixes---
  edited: 08-02-2014  ---Added comments---
+ edited: 12-02-2014  ---Added touchscreen off state---
  test build
  */
 // give access to standard arduino functions
@@ -40,4 +41,12 @@ int Touch::ReadX() {
 	digitalWrite(_pin1, LOW);
 	digitalWrite(_pin3, HIGH);
 	return xValue = analogRead(_pin2); // return the read out value
+}
+
+// Turns the touchscreen in off-state, for lower power consumption
+void Touch::Off() {
+	pinMode(_pin1, INPUT);
+	pinMode(_pin3, INPUT);
+	pinMode(_pin2, INPUT);
+	pinMode(_pin4, INPUT);
 }
