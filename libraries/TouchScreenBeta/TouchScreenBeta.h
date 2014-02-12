@@ -4,6 +4,7 @@
  edited: 04-02-2014
  edited: 07-02-2014  ---bugfixes---
  edited: 08-02-2014  ---Added comments---
+ edited: 12-02-2014  ---Added touchscreen off state---
  test build
  */
 // prevent including library twice
@@ -17,6 +18,7 @@ public:
 	Touch(byte pin1, byte pin2, byte pin3, byte pin4); // set in/output pins
 	int ReadX(); // function ReadX to read x-axis
 	int ReadY(); // function Ready to read y-axis
+	void Off(); // TouchScreen to off state
 
 	int xValue; // x-axis value
 	int yValue; // y-axis value
