@@ -12,6 +12,7 @@ Touch	KEYWORD1
 #######################################
 ReadX	KEYWORD2
 ReadY	KEYWORD2
+Off   KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
