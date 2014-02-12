@@ -3,6 +3,7 @@ Program to control remote outlets using a nintendo ds touchscreen as input devic
  Build date: 02-02-2014, v0.1
  Modified: 03-02-2014 --got library working with arduino ide--
  Modified: 07-02-2014 --bugfixes--
+ Modified: 12-02-2014 --Added touchscreen off state--
  test build
  */
 
@@ -35,6 +36,9 @@ void loop()
   Serial.println(yValue);
 
   delay(250);
+    
+  Touch.Off(); // Turns the touchscreen of
+  delay(1000);
 }
 
 
